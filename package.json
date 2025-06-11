@@ -1,0 +1,25 @@
+{
+  "name": "villa-web-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "postinstall": "npx husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "vite": "^6.3.5"
+  },
+  "lint-staged": {
+    "**/*": "prettier -w -u"
+  },
+  "dependencies": {
+    "prettier": "^3.5.3"
+  }
+}
