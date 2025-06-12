@@ -1,0 +1,169 @@
+.list_1 {
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #7a7a7a;
+}
+
+.list_1 li:first-child {
+  border-left: 1px solid #e9e7e7;
+  padding-left: 20px;
+}
+
+.list_1 i {
+  color: #f35525;
+  font-size: 20px;
+}
+
+.list_2 {
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & a {
+    background-color: #cdcdcd;
+    padding: 7px;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #f35525;
+    }
+  }
+}
+
+.header_1 {
+  padding: 20px 0;
+  border-bottom: 1px solid #e9e7e7;
+}
+
+@media (max-width: 992px) {
+  .header_1 {
+    display: none;
+  }
+}
+
+.menu_1 {
+  margin-top: 30px;
+}
+
+.sub_menu_1 {
+  float: left;
+  margin-top: 10px;
+
+  & ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  & a {
+    text-decoration: none;
+    color: #1e1e1e;
+    transition: all 0.3s;
+    font-weight: 500;
+
+    &:hover {
+      color: #f35525;
+    }
+  }
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.sub_menu_2 {
+  justify-content: space-between;
+
+  & .menu_btn {
+    position: fixed;
+    z-index: 100;
+    cursor: pointer;
+    top: 40px;
+    left: 50px;
+    width: 30px;
+    height: 25px;
+  }
+
+  & .menu_btn span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.25s;
+  }
+
+  & .menu_btn span:nth-child(1) {
+    top: 0px;
+  }
+
+  & .menu_btn span:nth-child(2) {
+    top: 10px;
+  }
+
+  & .menu_btn span:nth-child(3) {
+    top: 20px;
+  }
+
+  & .menu_btn.active span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-225deg);
+    transform: translateY(10px) rotate(-225deg);
+  }
+
+  & .menu_btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  & .menu_btn.active span:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(225deg);
+    transform: translateY(-10px) rotate(225deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu_1 .container {
+    max-width: 100%;
+  }
+
+  .sub_menu_1 {
+    float: none;
+    border-top: 1px solid #a0a0a0cb;
+    border-bottom: 1px solid #a0a0a0cb;
+    position: fixed;
+    right: 100%;
+    width: 100%;
+    transition: all 0.5s;
+
+    & ul {
+      display: block;
+
+      & li {
+        text-align: center;
+        border-bottom: 1px solid #dfdfdf;
+
+        & a {
+          padding: 10px 0;
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .sub_menu_1.active {
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .sub_menu_2 .menu_btn {
+    display: none;
+  }
+}
