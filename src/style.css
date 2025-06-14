@@ -167,3 +167,306 @@
     display: none;
   }
 }
+
+.carousel_1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+
+  & .carousel-item {
+    & .carousel-img {
+      height: 600px;
+      width: 100%;
+      background-position: center;
+    }
+
+    & .carousel-caption {
+      text-align: right;
+      bottom: 40%;
+    }
+  }
+}
+
+.section_1 {
+  margin-top: 200px;
+  margin-bottom: 200px;
+
+  & .buynow {
+    background: #f35525;
+    padding: 20px;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    bottom: -40px;
+    right: 0px;
+    position: absolute;
+  }
+
+  & .section_2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & h5 {
+      color: #ee626b;
+      border-right: 2px solid #ee626b;
+      padding-right: 10px;
+      margin-bottom: 30px;
+    }
+
+    & .accordion {
+      margin-top: 50px;
+      margin-right: 20px;
+
+      & .accordion-button::after {
+        display: none;
+      }
+
+      & .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        color: #f35525;
+        box-shadow: none;
+      }
+
+      & .accordion-item {
+        border: none;
+      }
+    }
+  }
+
+  & .section_3 {
+    position: relative;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+.section_4 {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+  & span {
+    color: #aaa;
+  }
+
+  & ul {
+    list-style: none;
+
+    & li {
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px solid #eee;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+.video_section {
+  background-image: url(https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/video-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 600px;
+  margin-bottom: 300px;
+  padding-top: 80px;
+  color: white;
+
+  & h6 {
+    color: #ee626b;
+    border-right: 2px solid #ee626b;
+    padding-right: 10px;
+    width: 100px;
+    margin: 0 auto 30px auto;
+  }
+
+  & .container {
+    text-align: center;
+  }
+
+  & .video {
+    width: 100%;
+    height: 600px;
+    background-image: url(https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/video-frame.jpg);
+    margin-top: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+
+    & i {
+      font-size: 50px;
+      color: #f35525;
+    }
+
+    & a {
+      background: white;
+      height: 70px;
+      display: flex;
+      width: 70px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      outline: 15px solid rgba(254, 85, 37, 0.5);
+    }
+  }
+}
+
+.section_5 {
+  padding-top: 100px;
+
+  & .section_5_item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    background-color: #ffeee9;
+    padding: 20px 50px;
+    width: fit-content;
+    border-radius: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+
+    & h1 {
+      color: #f35525;
+    }
+
+    & span {
+      width: 50px;
+      height: 50px;
+      background-color: #f35525;
+      border-radius: 50px;
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      outline: 5px solid white;
+    }
+  }
+}
+
+.best_deal {
+  margin-top: 150px;
+  background-color: #fafafa;
+  padding-top: 150px;
+  padding-bottom: 50px;
+
+  & .best_deals_btns {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    height: 100%;
+    align-items: flex-end;
+
+    & button {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 10px 20px;
+
+      &.active {
+        background-color: #f35525;
+        border: none;
+      }
+    }
+  }
+
+  & .best_deals_title {
+    & h6 {
+      color: #ee626b;
+      border-right: 2px solid #ee626b;
+      padding-right: 10px;
+    }
+  }
+
+  & .best_deals_content {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 70px;
+  }
+
+  & .best_deals_tab {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: all 0.3s;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  & .best_deal_img {
+    width: 100%;
+  }
+
+  & .best_deal_props {
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    border-radius: 10px;
+
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      & li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        & span:first-child {
+          color: #aaa;
+        }
+
+        & span:last-child {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  & .best_deal_info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  & .best_deal_buy {
+    background-color: #1e1e1e;
+    color: white;
+    width: 150px;
+    padding: 20px;
+    border-radius: 50px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+
+    & i {
+      background: red;
+      position: absolute;
+      left: 0;
+      padding: 10px;
+      border-radius: 50px;
+      font-size: 20px;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+    }
+  }
+}

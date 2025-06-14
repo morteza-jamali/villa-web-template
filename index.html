@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
     <title>Vite App</title>
   </head>
   <body>
@@ -27,7 +33,7 @@
             </ul>
           </div>
           <div class="col">
-            <ul class="d-flex list_1 float-end">
+            <ul class="d-flex list_1 float-start">
               <li>info@company.com <i class="bi bi-envelope-fill"></i></li>
               <li>
                 Sunny Isles Beach, FL 33160 <i class="bi bi-map-fill"></i>
@@ -65,6 +71,475 @@
       </div>
     </div>
 
+    <!-- Carousel -->
+    <div class="carousel_1">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="carousel-img"
+              style="
+                background-image: url(https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/banner-02.jpg);
+              "
+            ></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h1>عجله کن !</h1>
+              <h1>بهترین ویلا رو پیدا کن</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="carousel-img"
+              style="
+                background-image: url(https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/banner-03.jpg);
+              "
+            ></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h1>عجله کن !</h1>
+              <h1>بهترین ویلا رو پیدا کن</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="carousel-img"
+              style="
+                background-image: url(https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/banner-01.jpg);
+              "
+            ></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h1>عجله کن !</h1>
+              <h1>بهترین ویلا رو پیدا کن</h1>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="section_1">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section_3">
+              <img
+                src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/featured.jpg"
+                alt=""
+              />
+              <a href="#!" class="buynow"
+                ><img
+                  src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/featured-icon.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col">
+            <ul class="section_2">
+              <li><h5>ویژه</h5></li>
+              <li><h1>بهترین آپارتمان</h1></li>
+              <li>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the first item’s accordion body.</strong
+                        >
+                        It is shown by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It’s also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the second item’s accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It’s also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the third item’s accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It’s also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="section_4">
+              <ul>
+                <li>
+                  <img
+                    src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-01.png"
+                    alt=""
+                  />
+                  <div>
+                    <h5>250 متر مربع</h5>
+                    <span>مساحت زمینه</span>
+                  </div>
+                </li>
+                <li>
+                  <img
+                    src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-02.png"
+                    alt=""
+                  />
+                  <div>
+                    <h5>250 متر مربع</h5>
+                    <span>مساحت زمینه</span>
+                  </div>
+                </li>
+                <li>
+                  <img
+                    src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-03.png"
+                    alt=""
+                  />
+                  <div>
+                    <h5>250 متر مربع</h5>
+                    <span>مساحت زمینه</span>
+                  </div>
+                </li>
+                <li>
+                  <img
+                    src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-04.png"
+                    alt=""
+                  />
+                  <div>
+                    <h5>250 متر مربع</h5>
+                    <span>مساحت زمینه</span>
+                  </div>
+                </li>
+                <li>
+                  <img
+                    src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-01.png"
+                    alt=""
+                  />
+                  <div>
+                    <h5>250 متر مربع</h5>
+                    <span>مساحت زمینه</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video_section">
+      <div class="container">
+        <h6>بخش ویدئو</h6>
+        <h1>نمای متفاوتی را ببینید</h1>
+        <div class="video">
+          <a href="#!"><i class="bi bi-play-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section_5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section_5_item">
+              <h1>35</h1>
+              ساختمان <br />تمام شده است
+              <span></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="section_5_item">
+              <h1>35</h1>
+              ساختمان <br />تمام شده است
+              <span></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="section_5_item">
+              <h1>35</h1>
+              ساختمان <br />تمام شده است
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="best_deal">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="best_deals_title">
+              <h6>بهترین معامله</h6>
+              <h1>
+                همین الان بهترین<br />
+                معامله را پیدا کنید
+              </h1>
+            </div>
+          </div>
+          <div class="col">
+            <div class="best_deals_btns">
+              <button
+                type="button"
+                class="btn active"
+                data-id="firstExampleTab"
+              >
+                آپارتمان
+              </button>
+              <button type="button" class="btn" data-id="secondExampleTab">
+                آپارتمان
+              </button>
+              <button type="button" class="btn" data-id="thirdExampleTab">
+                آپارتمان
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="best_deals_content">
+          <div class="best_deals_tab" id="thirdExampleTab">
+            <div class="row">
+              <div class="col-3">
+                <div class="best_deal_props">
+                  <ul>
+                    <li><span>زمینه</span><span>152 مترمربع</span></li>
+                    <li><span>تعداد اتاق</span><span>3</span></li>
+                    <li><span>تعداد طبقه</span><span>3</span></li>
+                    <li><span>دارای پارکینگ</span><span>بله</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6">
+                <img
+                  class="best_deal_img"
+                  src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/deal-03.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-3">
+                <div class="best_deal_info">
+                  <h5>اطلاعات اضافی</h5>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ducimus nemo exercitationem, commodi reprehenderit iure
+                    quaerat dignissimos qui magnam rem, fugit, soluta velit
+                    dolorum! Soluta id architecto, quidem rem unde tenetur.
+                  </p>
+                  <a class="best_deal_buy" href="#!">
+                    معامله
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="best_deals_tab" id="secondExampleTab">
+            <div class="row">
+              <div class="col-3">
+                <div class="best_deal_props">
+                  <ul>
+                    <li><span>زمینه</span><span>152 مترمربع</span></li>
+                    <li><span>تعداد اتاق</span><span>3</span></li>
+                    <li><span>تعداد طبقه</span><span>3</span></li>
+                    <li><span>دارای پارکینگ</span><span>بله</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6">
+                <img
+                  class="best_deal_img"
+                  src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/deal-02.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-3">
+                <div class="best_deal_info">
+                  <h5>اطلاعات اضافی</h5>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ducimus nemo exercitationem, commodi reprehenderit iure
+                    quaerat dignissimos qui magnam rem, fugit, soluta velit
+                    dolorum! Soluta id architecto, quidem rem unde tenetur.
+                  </p>
+                  <a class="best_deal_buy" href="#!">
+                    معامله
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="best_deals_tab active" id="firstExampleTab">
+            <div class="row">
+              <div class="col-3">
+                <div class="best_deal_props">
+                  <ul>
+                    <li><span>زمینه</span><span>152 مترمربع</span></li>
+                    <li><span>تعداد اتاق</span><span>3</span></li>
+                    <li><span>تعداد طبقه</span><span>3</span></li>
+                    <li><span>دارای پارکینگ</span><span>بله</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6">
+                <img
+                  class="best_deal_img"
+                  src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/deal-01.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-3">
+                <div class="best_deal_info">
+                  <h5>اطلاعات اضافی</h5>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ducimus nemo exercitationem, commodi reprehenderit iure
+                    quaerat dignissimos qui magnam rem, fugit, soluta velit
+                    dolorum! Soluta id architecto, quidem rem unde tenetur.
+                  </p>
+                  <a class="best_deal_buy" href="#!">
+                    معامله
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
